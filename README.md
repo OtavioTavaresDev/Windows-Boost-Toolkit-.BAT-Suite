@@ -162,6 +162,38 @@ Firewall
 
 Status de proteção
 
+📊 monitor_recursos.bat 🆕
+
+Função: Monitoramento em tempo real do uso do sistema.
+
+Mostra continuamente:
+
+Uso de CPU
+
+Memória disponível
+
+Processos em execução
+
+Impacto:
+Permite identificar gargalos reais de desempenho.
+
+Quando usar:
+Para diagnosticar lentidão ou consumo excessivo.
+
+💽 verificacao_disco_profunda.bat 🆕
+
+Função: Verificação estrutural do disco.
+
+Executa:
+
+chkdsk /f /r
+
+Impacto:
+Corrige erros no sistema de arquivos e identifica setores defeituosos.
+
+Quando usar:
+Travamentos, lentidão constante, erros de leitura/gravação.
+
 📊 Frequência Recomendada
 Script	Frequência
 manutencao	1x por semana
@@ -170,6 +202,7 @@ boost_performance	Antes de tarefas pesadas
 modo_gamer	Antes de jogar
 limpeza_cache_apps	1x por semana
 backup_rapido	Antes de mudanças importantes
+verificacao_disco_profunda	Quando houver sinais de falha de disco
 ⚠️ Observações Técnicas
 
 A pasta TEMP nunca ficará 100% vazia com o Windows em execução
@@ -177,6 +210,8 @@ A pasta TEMP nunca ficará 100% vazia com o Windows em execução
 Alguns comandos podem pedir reinicialização
 
 EmptyStandbyList.exe não é nativo do Windows
+
+chkdsk /r pode demorar bastante
 
 Scripts alteram rede e energia → usar com consciência
 
